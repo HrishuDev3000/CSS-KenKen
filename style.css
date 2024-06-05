@@ -1,36 +1,70 @@
 * {
   box-sizing: border-box;
+  
 }
 
 html {
   font-size: 16px;
-  min-width: 475 px;
+}
+
+title{
+  color: rgb(138, 5, 161);
+}
+
+body{
+  margin-left: auto;
+  margin-right: auto;
+  background-color: rgb(248, 189, 201);
+  margin: 1rem;
+  
 }
 
 .grid{
+  position:relative;
   display: grid;
   grid-template-columns: repeat(4,1fr);
   grid-template-rows: repeat(4,1fr);
+  
 }
 
 .grid-items{
-  border: 0.1rem solid gray;
+  border: 0.4rem solid rgb(228, 241, 129);
   font-size: 2rem;
-  background-color: aliceblue;
+  background-color: rgb(177, 211, 241);
 }
 
 #box3, #box7, #box10, #box11, #box12, #box15
 {
-  border-left: 0.5 rem solid black;
+  border-left: 0.5rem solid rgb(90, 3, 3);
 }
 
-#box1, #box2, #box13, #box4, #box5, #box8, #box9, #box10
+#box1, #box2, #box13, #box4, #box5, #box8, #box9, #box10, #box11
 {
-  border-button: 0.5 rem solid black;
+  border-bottom: 0.5rem solid rgb(90, 3, 3);
+}
+
+#box1, #box2, #box3, #box4
+{
+  border-top: 0.5rem solid rgb(17, 3, 90);
+}
+
+#box1, #box5, #box9, #box13
+{
+  border-left: 0.5rem solid rgb(17, 3, 90);
+}
+
+#box13, #box14, #box15, #box16
+{
+  border-bottom: 0.5rem solid rgb(17, 3, 90);
+}
+
+#box4, #box8, #box12, #box16
+{
+  border-right: 0.5rem solid rgb(17, 3, 90);
 }
 
 .position{
-  display: absolute;
+  position : absolute;
   top: 0%;
   right: 0%;
 }
@@ -44,4 +78,10 @@ html {
 .special{
   border: none;
   font-size: 2rem;
+}
+
+@media screen and (min-width:(475px)){
+  html{
+    font-size: 16px;
+  }
 }
